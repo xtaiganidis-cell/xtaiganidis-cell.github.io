@@ -1,79 +1,153 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Charalampos Taiganidis | Official Website</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;background:#071a2b;color:white;font-family:Arial,sans-serif;line-height:1.7}
-header{padding:24px;text-align:center;border-bottom:1px solid #344b5c}
-.logo{color:#d7b875;font-size:18px;letter-spacing:4px;font-weight:bold}
-.hero{min-height:70vh;padding:100px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(ellipse at bottom,#164967,#071a2b 70%)}
-.eyebrow{color:#d7b875;letter-spacing:3px;font-size:12px}
-h1{font-size:clamp(38px,8vw,76px);line-height:1.12;margin:22px 0}
-.subtitle{font-size:18px;color:#c4d0d8}
-.line{height:2px;width:70px;background:#d7b875;margin:30px auto}
-section{padding:65px 25px;max-width:850px;margin:auto;text-align:center}
-h2{color:#d7b875;font-size:28px}
-p{color:#d3dfe7}
-.card{background:#102c43;border:1px solid #34506a;border-radius:18px;padding:32px;margin-top:26px}
-.quote{font-size:23px;font-style:italic;color:white}
-footer{border-top:1px solid #344b5c;text-align:center;padding:35px;font-size:13px;color:#b7c7d1}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081b2c">
+  <meta name="description" content="Η επίσημη ιστοσελίδα του Χαράλαμπου Ταϊγανίδη — Χρυσού Παραολυμπιονίκη και αθλητή κολύμβησης ανοιχτής θάλασσας. Αθλητική πορεία, δράσεις, στόχοι και επικοινωνία.">
+  <meta property="og:title" content="Χαράλαμπος Ταϊγανίδης | CT Open Water">
+  <meta property="og:description" content="Από το βάθρο των Παραολυμπιακών στη δύναμη της ανοιχτής θάλασσας.">
+  <meta property="og:type" content="website">
+  <title>Χαράλαμπος Ταϊγανίδης | CT Open Water</title>
+  <style>
+    :root{--navy:#081b2c;--navy2:#0b2539;--deep:#061421;--card:#102b40;--gold:#dbb875;--soft:#e5edf1;--muted:#abbfcd;--border:rgba(194,218,229,.16);--r:18px;scroll-behavior:smooth}
+    *{box-sizing:border-box}body{margin:0;background:var(--deep);color:#f6fafb;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.66;-webkit-font-smoothing:antialiased}a{color:inherit}button{font:inherit}::selection{background:var(--gold);color:var(--deep)}
+    .skip{position:absolute;left:-9999px;top:10px;background:white;color:black;padding:9px;z-index:999}.skip:focus{left:10px}
+    .page-wrap{max-width:1180px;padding:0 30px;margin:auto}.site-header{position:sticky;top:0;z-index:10;background:rgba(6,20,33,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}.header-inner{display:flex;align-items:center;justify-content:space-between;min-height:80px;gap:18px}
+    .brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none;white-space:nowrap}.brand-mark{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--gold);border-radius:8px;width:42px;height:42px;color:var(--gold);font-weight:800;letter-spacing:-2px;font-size:18px}.brand-words{display:flex;flex-direction:column;line-height:1.15}.brand-words b{font-size:15px;letter-spacing:.21em}.brand-words small{font-size:10px;letter-spacing:.31em;color:var(--gold);margin-top:4px}
+    .nav{display:flex;gap:23px;align-items:center}.nav a{font-size:12px;letter-spacing:.06em;text-decoration:none;color:var(--soft);transition:color .2s}.nav a:hover,.nav a:focus{color:var(--gold)}.header-actions{display:flex;align-items:center;gap:10px}.lang-btn,.menu-btn{background:transparent;border:1px solid var(--border);color:var(--soft);border-radius:9px;padding:7px 11px;cursor:pointer}.lang-btn:hover,.menu-btn:hover{border-color:var(--gold)}.menu-btn{display:none}.menu-btn svg{display:block}
+    .hero{position:relative;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse 850px 650px at 78% 88%,#155273 0%,#0d3048 30%,transparent 72%),linear-gradient(143deg,#091e30 5%,#0a2539 60%,#061726 100%);border-bottom:1px solid var(--border)}.hero:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(transparent 96%,rgba(255,255,255,.03) 100%);background-size:100% 70px;opacity:.3;z-index:-1}.hero-inner{min-height:670px;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:45px;padding-top:95px;padding-bottom:110px}.eyebrow{display:flex;align-items:center;gap:14px;color:var(--gold);font-weight:700;letter-spacing:.31em;font-size:12px;text-transform:uppercase}.eyebrow:before{content:"";display:inline-block;width:34px;height:1px;background:var(--gold)}h1,h2,h3,p{margin-top:0}h1{font-weight:770;font-size:clamp(49px,6.2vw,87px);line-height:1.03;letter-spacing:-.04em;margin:28px 0 25px;overflow-wrap:break-word}h1 span{display:block;color:var(--gold)}.hero-lead{font-size:clamp(17px,2vw,21px);max-width:610px;color:#d0e0e8;line-height:1.7}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 23px;border-radius:10px;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.02em;transition:transform .2s,border-color .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn-gold{background:var(--gold);color:var(--deep)}.btn-outline{border:1px solid rgba(225,237,242,.32);color:white;background:rgba(255,255,255,.03)}.btn-outline:hover{border-color:var(--gold)}
+    .hero-art{position:relative;min-height:410px;display:flex;align-items:center;justify-content:center}.art-ring{border:1px solid rgba(219,184,117,.32);position:absolute;border-radius:50%;aspect-ratio:1}.art-ring.a{width:340px}.art-ring.b{width:255px;border-style:dashed;opacity:.55}.art-circle{height:170px;width:170px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:linear-gradient(140deg,rgba(219,184,117,.11),rgba(255,255,255,.02));border:1px solid rgba(219,184,117,.55);font-size:36px;color:var(--gold);font-weight:800;letter-spacing:-.12em;padding-right:7px;box-shadow:0 0 75px rgba(11,111,161,.2)}.art-label{position:absolute;bottom:15px;right:10px;color:var(--gold);font-size:11px;letter-spacing:.33em}.art-wave{position:absolute;bottom:35px;width:100%;opacity:.44;transform:rotate(-10deg)}
+    .stats{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--border);background:#0c293d;border-radius:20px;transform:translateY(-50%);box-shadow:0 20px 45px rgba(0,0,0,.14)}.stat{padding:25px 12px;text-align:center}.stat:not(:last-child){border-right:1px solid var(--border)}.stat b{display:block;color:var(--gold);font-weight:800;font-size:36px;line-height:1.2}.stat span{color:#cad9e1;font-size:13px}
+    .section{padding:92px 0}.section-pad-top{padding-top:24px}.section-dark{background:#091e2f}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}.section-kicker{display:block;color:var(--gold);font-size:11px;letter-spacing:.25em;text-transform:uppercase;font-weight:750;margin-bottom:10px}.section h2{font-size:clamp(30px,4.3vw,48px);line-height:1.15;letter-spacing:-.025em;margin-bottom:15px}.section-intro{color:var(--muted);max-width:660px;font-size:16px}.section-intro:last-child{margin-bottom:0}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:start}.prose{font-size:17px;color:#cddde5}.prose p{margin-bottom:20px}.accent-quote{border-left:2px solid var(--gold);padding:10px 0 10px 25px;margin-top:20px;color:#f0e2c5;font-size:22px;line-height:1.55}.info-panel{background:linear-gradient(145deg,#123349,#0b2436);border:1px solid var(--border);padding:30px;border-radius:var(--r)}.info-panel h3{font-size:19px;color:var(--gold);margin-bottom:17px}.simple-list{margin:0;padding:0;list-style:none}.simple-list li{border-bottom:1px solid var(--border);padding:13px 0;display:flex;justify-content:space-between;gap:15px}.simple-list li:last-child{border:0}.simple-list strong{font-size:14px}.simple-list span{font-size:13px;color:var(--muted);text-align:right}
+    .timeline{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:37px}.milestone{background:#112d41;border:1px solid var(--border);padding:27px 18px;border-radius:14px}.milestone .year{font-size:31px;font-weight:800;color:var(--gold)}.milestone h3{margin:10px 0 2px;font-size:17px}.milestone small{color:var(--muted);font-size:12px}
+    .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{background:linear-gradient(180deg,#12354b,#0e293c);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}.card-visual{min-height:150px;background:radial-gradient(ellipse at 30% 140%,rgba(42,128,158,.9),transparent 63%),linear-gradient(145deg,#15374d,#0a2235);position:relative;display:flex;align-items:center;padding:24px;overflow:hidden}.card-visual:after{content:"";position:absolute;width:240px;height:240px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-90px;top:-98px}.card-visual .big-no{position:absolute;right:12px;bottom:-42px;font-size:135px;font-weight:800;color:rgba(255,255,255,.055)}.card-visual strong{position:relative;z-index:1;color:var(--gold);font-size:15px;letter-spacing:.12em}.card-copy{padding:25px;display:flex;flex-direction:column;flex:1}.card-copy h3{font-size:21px;line-height:1.25;margin-bottom:12px}.card-copy p{color:#c5d5df;font-size:14px;flex:1}.meta{font-size:11px;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;font-weight:750;margin-bottom:10px}.label-completed{color:#c2e8df}.label-attempt{color:#e3d1b3}.card-tail{font-size:13px;color:var(--gold);text-decoration:none;border-top:1px solid var(--border);padding-top:16px;margin-top:5px}.card-tail:hover{text-decoration:underline}
+    .projects{display:grid;grid-template-columns:1.2fr 1fr;gap:20px}.project-feature{grid-row:span 2;min-height:400px;display:flex;flex-direction:column;justify-content:end;background:radial-gradient(ellipse at 75% 10%,rgba(43,115,147,.55),transparent 60%),linear-gradient(180deg,#0e334d,#0a2438);border:1px solid var(--border);border-radius:var(--r);padding:34px;position:relative;overflow:hidden}.project-feature:before{content:"";width:340px;height:340px;border:1px solid rgba(219,184,117,.17);border-radius:50%;position:absolute;right:-40px;top:-95px;box-shadow:0 0 0 45px rgba(219,184,117,.028),0 0 0 95px rgba(219,184,117,.02)}.project-feature h3{font-size:39px;line-height:1.15;position:relative;margin-bottom:20px}.project-feature p{color:#c9d9e2;max-width:520px;margin-bottom:0}.project-small{border:1px solid var(--border);border-radius:var(--r);background:#112e43;padding:29px}.project-small h3{font-size:23px;margin-bottom:10px}.project-small p{color:#c6d7df;font-size:14px;margin-bottom:0}.pill{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(219,184,117,.37);color:var(--gold);font-size:11px;border-radius:30px;letter-spacing:.08em;padding:6px 11px;margin-bottom:18px;font-weight:750}.pill:before{content:"";width:6px;height:6px;background:var(--gold);border-radius:50%}
+    .values{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.value{border-top:1px solid rgba(219,184,117,.55);padding:22px 4px}.value h3{font-size:20px}.value p{font-size:14px;color:var(--muted)}
+    .gallery-teaser{border:1px solid var(--border);border-radius:20px;padding:37px;min-height:220px;position:relative;background:radial-gradient(ellipse at 85% 110%,rgba(35,111,151,.37),transparent 60%),#0e2a40;display:flex;flex-direction:column;justify-content:center}.gallery-teaser p{color:var(--muted);max-width:640px}.gallery-teaser h3{font-size:25px}.gallery-steps{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.gallery-steps span{border:1px solid var(--border);color:var(--soft);padding:6px 11px;border-radius:40px;font-size:12px}
+    .sponsor-note{border:1px solid var(--border);background:linear-gradient(135deg,#112e42,#0b2638);border-radius:18px;padding:32px 38px;display:flex;gap:25px;justify-content:space-between;align-items:center}.sponsor-note p{color:var(--muted);max-width:670px;margin:0}.sponsor-note .seal{min-width:105px;width:105px;height:105px;border:1px solid rgba(219,184,117,.43);border-radius:50%;display:grid;place-items:center;font-size:22px;font-weight:800;color:var(--gold);letter-spacing:-.09em}
+    .media-links{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.media-link{display:flex;justify-content:space-between;gap:15px;border:1px solid var(--border);background:#112c40;border-radius:12px;padding:18px 20px;text-decoration:none;transition:border .2s}.media-link:hover{border-color:var(--gold)}.media-link small{display:block;color:var(--muted);font-size:11px;letter-spacing:.08em;text-transform:uppercase}.media-link strong{font-size:14px}.media-link i{color:var(--gold);font-style:normal}
+    .contact{background:radial-gradient(ellipse at center bottom,rgba(19,87,121,.38),transparent 68%),#092033;border-top:1px solid var(--border)}.contact-layout{text-align:center;max-width:820px;margin:auto}.contact-layout h2{font-size:clamp(33px,5vw,54px)}.contact-layout p{color:var(--muted)}.social{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:28px}.social a,.social span{font-size:13px;text-decoration:none;padding:9px 15px;border:1px solid var(--border);border-radius:40px}.social a:hover{border-color:var(--gold);color:var(--gold)}.social span{color:var(--muted)}
+    footer{background:var(--deep);border-top:1px solid var(--border);padding:27px 0;color:#92a8b7;font-size:12px}.footer-inner{display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap}footer a{color:var(--gold);text-decoration:none}
+    @media(max-width:1000px){.nav{gap:13px}.nav a{font-size:11px}.page-wrap{padding:0 24px}.hero-inner{grid-template-columns:1fr .6fr;gap:12px}.hero-art{min-height:350px}.art-ring.a{width:285px}.art-ring.b{width:210px}.art-circle{width:150px;height:150px}.timeline{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:760px){.header-inner{min-height:69px}.menu-btn{display:block}.nav{display:none;position:absolute;left:0;right:0;top:69px;flex-direction:column;gap:0;align-items:stretch;padding:9px 24px 19px;background:#081b2c;border-bottom:1px solid var(--border)}.nav.open{display:flex}.nav a{padding:12px 0;font-size:14px;border-bottom:1px solid var(--border)}.hero-inner{grid-template-columns:1fr;min-height:auto;padding-top:85px;padding-bottom:105px}.hero-art{min-height:225px;margin-top:12px}.art-ring.a{width:215px}.art-ring.b{width:155px}.art-circle{width:110px;height:110px;font-size:27px}.art-label{right:0;bottom:1px}.art-wave{max-width:480px}.hero h1{font-size:clamp(45px,10.7vw,76px)}.stats{grid-template-columns:repeat(2,1fr)}.stat{padding:18px 5px}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--border)}.stat b{font-size:29px}.stat span{font-size:12px}.section{padding:67px 0}.section-pad-top{padding-top:10px}.about-grid,.projects{grid-template-columns:1fr}.project-feature{grid-row:auto;min-height:350px}.cards{grid-template-columns:1fr 1fr}.values{grid-template-columns:1fr 1fr}.media-links{grid-template-columns:1fr}.section-head{display:block}.gallery-teaser{padding:25px}.footer-inner{justify-content:center;text-align:center}}
+    @media(max-width:540px){.sponsor-note{padding:24px;align-items:flex-start}.sponsor-note .seal{display:none}.page-wrap{padding:0 19px}.brand-words b{font-size:12px}.brand-words small{font-size:9px}.brand-mark{height:37px;width:37px}.header-actions{gap:7px}.lang-btn,.menu-btn{padding:7px 9px}.eyebrow{font-size:10px;letter-spacing:.2em}.eyebrow:before{width:22px}.hero-inner{padding-top:64px;padding-bottom:100px}.hero h1{font-size:clamp(42px,11vw,62px)}.hero-lead{font-size:16px}.btn{width:100%}.cards,.timeline,.values{grid-template-columns:1fr}.project-feature{padding:27px;min-height:330px}.project-feature h3{font-size:32px}.stat b{font-size:27px}.section h2{font-size:33px}.accent-quote{font-size:19px}.hero-art{min-height:185px}.art-ring.a{width:190px}.art-ring.b{width:130px}.art-circle{height:95px;width:95px;font-size:23px}.art-label{font-size:9px}.stats{transform:translateY(-45%)}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+    /* Η πλήρης φωτογραφία του CT OPEN WATER προβάλλεται χωρίς περικοπή. */
+    .photo-hero{background:#061421;border-bottom:1px solid var(--border)}
+    .photo-holder{position:relative;width:100%;max-width:1540px;margin:0 auto;line-height:0;isolation:isolate}
+    .photo-img{display:block;width:100%;height:auto;object-fit:contain;}
+    .photo-hotspot{position:absolute;top:61.8%;height:26.8%;width:18.6%;z-index:1;border-radius:10px;cursor:pointer}
+    .photo-hotspot:focus-visible{outline:3px solid #fff;outline-offset:3px;background:rgba(219,184,117,.12)}
+    .spot-story{left:2.1%}.spot-medals{left:21.5%}.spot-film{left:41%}.spot-honours{left:60.5%}.spot-contact{left:79.8%}
+    .photo-shortcuts{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;padding-top:18px}
+    .photo-shortcuts a{background:#102b40;border:1px solid rgba(219,184,117,.25);padding:12px 9px;text-align:center;border-radius:9px;color:#e5edf1;text-decoration:none;font-size:12px;line-height:1.3}
+    .photo-shortcuts a:hover,.photo-shortcuts a:focus-visible{border-color:var(--gold);color:var(--gold)}
+    .photo-followup{padding-top:32px;padding-bottom:52px;text-align:center}
+    .photo-lead{font-size:clamp(16px,1.9vw,21px);line-height:1.7;color:#cdddE5;max-width:770px;margin:0 auto}
+    .photo-followup .hero-actions{justify-content:center;margin-top:23px}
+    .photo-hero + .page-wrap .stats{transform:none;margin-top:22px;margin-bottom:30px}
+    #honours{scroll-margin-top:90px}
+    .photo-hero,.photo-hero ~ section{scroll-margin-top:85px}
+    @media(max-width:760px){.photo-shortcuts{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;padding-top:15px}.photo-shortcuts a:last-child{grid-column:1/-1}.photo-followup{padding-top:26px;padding-bottom:40px}.photo-hotspot{border-radius:3px}}
+    @media(max-width:540px){.photo-shortcuts a{font-size:12px;padding:13px 7px}.photo-followup .btn{width:100%}.photo-followup .hero-actions{flex-direction:column}.photo-lead{font-size:16px}}
+  </style>
 </head>
 <body>
-<header>
-<div class="logo">CT | OPEN WATER</div>
-</header>
-
-<div class="hero">
-<div class="eyebrow">OFFICIAL WEBSITE</div>
-<h1>CHARALAMPOS<br>TAIGANIDIS</h1>
-<div class="line"></div>
-<div class="subtitle">
-Paralympic Gold Medalist<br>
-Open Water Swimming
-</div>
-</div>
-
-<section>
-<h2>Η Δική μου Διαδρομή</h2>
-<p>
-Ο αθλητισμός είναι ένα ταξίδι υπέρβασης,
-δύναμης και διαρκούς εξέλιξης.
-Από την Παραολυμπιακή κολύμβηση
-μέχρι τις μεγάλες προκλήσεις της ανοιχτής θάλασσας,
-κάθε διαδρομή έχει έναν βαθύτερο σκοπό.
-</p>
+<a href="#main" class="skip">Μετάβαση στο περιεχόμενο</a>
+<header class="site-header"><div class="page-wrap header-inner">
+  <a class="brand" href="#home" aria-label="CT Open Water - αρχική"><span class="brand-mark">CT</span><span class="brand-words"><b>CHARALAMPOS</b><small>OPEN WATER</small></span></a>
+  <nav id="main-nav" class="nav" aria-label="Κεντρική πλοήγηση">
+    <a href="#about" data-t="navAbout">Η πορεία μου</a><a href="#paralympics" data-t="navMedals">Διακρίσεις</a><a href="#openwater" data-t="navOpen">Open Water</a><a href="#projects" data-t="navProjects">Στόχοι</a><a href="#media" data-t="navMedia">Δημοσιεύματα</a><a href="#contact" data-t="navContact">Επικοινωνία</a>
+  </nav>
+  <div class="header-actions"><button type="button" id="language" class="lang-btn" aria-label="Change language">EN</button><button type="button" id="menu" class="menu-btn" aria-label="Άνοιγμα μενού" aria-expanded="false" aria-controls="main-nav"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div>
+</div></header>
+<main id="main">
+<section class="photo-hero" id="home">
+  <div class="photo-holder">
+    <img class="photo-img" src="main-photo.jpg" width="1448" height="1086" fetchpriority="high" decoding="async" alt="CT OPEN WATER — Charalampos Taiganidis. Κολυμβητής σε ανοιχτή θάλασσα, αθλητικές διακρίσεις και πέντε θεματικές ενότητες." />
+    <a class="photo-hotspot spot-story" href="#about" aria-label="Η ιστορία μου — μετάβαση στην ενότητα"></a>
+    <a class="photo-hotspot spot-medals" href="#paralympics" aria-label="Αθλητικές διακρίσεις — μετάβαση στην ενότητα"></a>
+    <a class="photo-hotspot spot-film" href="#gallery" aria-label="Τα ντοκιμαντέρ μου — μετάβαση στην ενότητα φωτογραφιών και βίντεο"></a>
+    <a class="photo-hotspot spot-honours" href="#honours" aria-label="Τιμητικές βραβεύσεις — μετάβαση στην ενότητα"></a>
+    <a class="photo-hotspot spot-contact" href="#contact" aria-label="Επικοινωνία — μετάβαση στην ενότητα"></a>
+  </div>
+  <nav class="photo-shortcuts page-wrap" aria-label="Κύριες ενότητες της ιστοσελίδας">
+    <a href="#about" data-t="shortcutStory">Η ιστορία μου ↗</a>
+    <a href="#paralympics" data-t="shortcutMedals">Αθλητικές διακρίσεις ↗</a>
+    <a href="#gallery" data-t="shortcutDocs">Τα ντοκιμαντέρ μου ↗</a>
+    <a href="#honours" data-t="shortcutHonours">Τιμητικές βραβεύσεις ↗</a>
+    <a href="#contact" data-t="shortcutContact">Επικοινωνία ↗</a>
+  </nav>
+  <div class="page-wrap photo-followup">
+    <p class="photo-lead" data-t="heroLead">Από το βάθρο των Παραολυμπιακών Αγώνων στη δύναμη της ανοιχτής θάλασσας. Μια διαδρομή που συνεχίζεται πέρα από τα όρια.</p>
+    <div class="hero-actions"><a class="btn btn-gold" href="#paralympics" data-t="heroCta1">Η αθλητική πορεία</a><a class="btn btn-outline" href="#openwater" data-t="heroCta2">Ανοιχτή θάλασσα ↗</a></div>
+  </div>
 </section>
-
-<section>
-<h2>OPEN WATER SWIMMING</h2>
-<div class="card">
-<p>Αντοχή. Επιμονή. Ελευθερία.</p>
-<p class="quote">
-«Τα όρια υπάρχουν για να τα ξεπερνάμε.»
-</p>
-</div>
-</section>
-
-<section>
-<h2>Ένα Ταξίδι Χωρίς Όρια</h2>
-<p>
-Η θάλασσα ενώνει τον αθλητισμό με τη φύση,
-τον πολιτισμό και την ανθρώπινη δύναμη.
-</p>
-<p>
-Σύντομα περισσότερα για τις αθλητικές δράσεις,
-τις διακρίσεις και τα επόμενα εγχειρήματα.
-</p>
-</section>
-
-<footer>
-© 2026 Charalampos Taiganidis<br>
-Official Website | CT OPEN WATER
-</footer>
+<div class="page-wrap"><div class="stats" aria-label="Αθλητικές διακρίσεις">
+  <div class="stat"><b>10</b><span data-t="statMedals">Παραολυμπιακά μετάλλια</span></div><div class="stat"><b>4</b><span data-t="statGold">Χρυσά Παραολυμπιακά</span></div><div class="stat"><b>5</b><span data-t="statGames">Παραολυμπιακές συμμετοχές</span></div><div class="stat"><b>24</b><span data-t="statRecords">Παγκόσμια ρεκόρ πισίνας</span></div>
+</div></div>
+<section id="about" class="section section-pad-top"><div class="page-wrap about-grid">
+  <div><span class="section-kicker" data-t="aboutKick">Η ΙΣΤΟΡΙΑ</span><h2 data-t="aboutTitle">Μια ζωή αφιερωμένη στην κολύμβηση.</h2>
+    <div class="prose"><p data-t="aboutP1">Από τα πρώτα μου βήματα στην αγωνιστική κολύμβηση έως την κορυφή του Παραολυμπιακού αθλητισμού, το νερό υπήρξε ο χώρος όπου έμαθα να δοκιμάζω τις δυνάμεις μου.</p><p data-t="aboutP2">Μετά από πέντε Παραολυμπιακές συμμετοχές και σημαντικές διεθνείς διακρίσεις, άνοιξα ένα νέο κεφάλαιο: την υπερμαραθώνια κολύμβηση ανοιχτής θάλασσας, με δράσεις που ενώνουν την αθλητική προσπάθεια με τον άνθρωπο, την Ελλάδα και τη φύση.</p></div>
+    <blockquote class="accent-quote" data-t="aboutQuote">«Τα όνειρα, όρια δεν έχουν.»</blockquote>
+  </div>
+  <aside class="info-panel"><h3 data-t="aboutAside">Η πορεία με μια ματιά</h3><ul class="simple-list">
+    <li><strong data-t="infoSport">Άθλημα</strong><span data-t="infoSportV">Κολύμβηση & Open Water</span></li>
+    <li><strong data-t="infoGames">Παραολυμπιακοί Αγώνες</strong><span>2004 – 2020</span></li>
+    <li><strong data-t="infoTitles">Παγκόσμιες διακρίσεις</strong><span data-t="infoTitlesV">14 παγκόσμιοι τίτλοι</span></li>
+    <li><strong data-t="infoSea">Ανοιχτή θάλασσα</strong><span data-t="infoSeaV">Από το 2022</span></li>
+    <li><strong data-t="infoIdentity">Κεντρική ταυτότητα</strong><span>CT – OPEN WATER</span></li>
+  </ul></aside>
+</div></section>
+<section class="section section-dark" id="paralympics"><div class="page-wrap"><div class="section-head"><div><span class="section-kicker" data-t="medalKick">ΑΘΛΗΤΙΚΗ ΚΛΗΡΟΝΟΜΙΑ</span><h2 data-t="medalTitle">Πέντε Παραολυμπιακοί Αγώνες. Μια ιστορία.</h2><p class="section-intro" data-t="medalP">Δέκα μετάλλια: τέσσερα χρυσά, τέσσερα ασημένια και δύο χάλκινα. Μια σταθερή παρουσία στη διεθνή κορυφή της κολύμβησης.</p></div></div>
+<div class="timeline"><div class="milestone"><div class="year">2004</div><h3 data-t="g1">Αθήνα</h3><small data-t="g1s">Παραολυμπιακοί Αγώνες</small></div><div class="milestone"><div class="year">2008</div><h3 data-t="g2">Πεκίνο</h3><small data-t="g1s">Παραολυμπιακοί Αγώνες</small></div><div class="milestone"><div class="year">2012</div><h3 data-t="g3">Λονδίνο</h3><small data-t="g1s">Παραολυμπιακοί Αγώνες</small></div><div class="milestone"><div class="year">2016</div><h3 data-t="g4">Ρίο</h3><small data-t="g1s">Παραολυμπιακοί Αγώνες</small></div><div class="milestone"><div class="year">2020</div><h3 data-t="g5">Τόκιο</h3><small data-t="g5s">Αγώνες του 2020, το 2021</small></div></div>
+<p style="margin-top:24px;font-size:13px;color:#9fbbcb"><span data-t="medalSource">Επίσημη καταγραφή αποτελεσμάτων:</span> <a style="color:var(--gold)" href="https://www.paralympic.org/athletes/charalampos-taiganidis" target="_blank" rel="noopener noreferrer">International Paralympic Committee ↗</a></p>
+</div></section>
+<section class="section" id="openwater"><div class="page-wrap"><div class="section-head"><div><span class="section-kicker" data-t="openKick">ΟΛΟΚΛΗΡΩΜΕΝΕΣ ΔΡΑΣΕΙΣ & ΠΡΟΣΠΑΘΕΙΕΣ</span><h2 data-t="openTitle">Η θάλασσα ως επόμενη πρόκληση.</h2><p class="section-intro" data-t="openDesc">Μετά την πισίνα, κάθε υπερμαραθώνια διαδρομή έγινε μια ξεχωριστή ιστορία αντοχής, ομαδικής προσπάθειας και κοινωνικού μηνύματος.</p></div></div>
+<div class="cards">
+  <article class="card"><div class="card-visual"><strong>RHODES → SYMI</strong><span class="big-no">22</span></div><div class="card-copy"><div class="meta label-completed" data-t="done2022">2022 · Ολοκληρώθηκε</div><h3 data-t="sea1Title">Ρόδος – Πανορμίτης Σύμης</h3><p data-t="sea1Text">Μια κολυμβητική διαδρομή περίπου 25 ναυτικών μιλίων, με τερματισμό στην Ιερά Μονή Πανορμίτη.</p><a class="card-tail" href="https://www.dimokratiki.gr/05-11-2022/o-taiganidis-ekane-to-tama-toy/" target="_blank" rel="noopener noreferrer" data-t="readCoverage">Διάβασε το δημοσίευμα ↗</a></div></article>
+  <article class="card"><div class="card-visual"><strong>CRETE · OPEN WATER</strong><span class="big-no">23</span></div><div class="card-copy"><div class="meta label-completed" data-t="done2023">2023 · Ολοκληρώθηκε</div><h3 data-t="sea2Title">Σούδα – Σητεία</h3><p data-t="sea2Text">Υπερμαραθώνια κολύμβηση περίπου 250 χλμ. κατά μήκος της βόρειας ακτής της Κρήτης.</p><a class="card-tail" href="https://www.neakriti.gr/athlitismos/spor/2027044_egrapse-istoria-o-taiganidis-me-mega-horigo-ton-kotsobolo-video" target="_blank" rel="noopener noreferrer" data-t="readCoverage">Διάβασε το δημοσίευμα ↗</a></div></article>
+  <article class="card"><div class="card-visual"><strong>CYPRUS · ENDURANCE</strong><span class="big-no">25</span></div><div class="card-copy"><div class="meta label-completed" data-t="done2025">2025 · Ολοκληρώθηκε</div><h3 data-t="sea3Title">Πάφος – ανοιχτά Λάρνακας</h3><p data-t="sea3Text">Περίπου 149 χλμ. συνεχούς κολύμβησης στην ανοιχτή θάλασσα της Κύπρου, σε μια υπερπροσπάθεια περίπου 60 ωρών.</p><a class="card-tail" href="https://enalios.com.cy/60-%CF%8E%CF%81%CE%B5%CF%82-%CF%83%CF%84%CE%B7-%CE%B8%CE%AC%CE%BB%CE%B1%CF%83%CF%83%CE%B1-%CE%AD%CE%BB%CE%BB%CE%B7%CE%BD%CE%B1%CF%82-%CF%80%CE%B1%CF%81%CE%B1%CE%BF%CE%BB%CF%85%CE%BC%CF%80%CE%B9%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7%CF%82-%CE%B5%CF%80%CE%B9%CF%87%CE%B5%CE%AF%CF%81%CE%B7%CF%83%CE%B5-%CF%84%CE%BF-%CE%B1%CE%BA%CE%B1%CF%84%CF%8C%CF%81%CE%B8%CF%89%CF%84%CE%BF-%CF%83%CF%84%CE%B7%CE%BD-%CE%BA%CF%8D%CF%80%CF%81%CE%BF/" target="_blank" rel="noopener noreferrer" data-t="readCoverage">Διάβασε το δημοσίευμα ↗</a></div></article>
+  <article class="card"><div class="card-visual"><strong>CYPRUS · 2026</strong><span class="big-no">26</span></div><div class="card-copy"><div class="meta label-attempt" data-t="attempt2026">2026 · Προσπάθεια</div><h3 data-t="sea4Title">Κύπρος · στόχος 151 χλμ.</h3><p data-t="sea4Text">Η νέα προσπάθεια διακόπηκε για λόγους ασφαλείας εξαιτίας ισχυρών ανέμων, έπειτα από περίπου 32 ώρες και 90 χλμ. κολύμβησης. Η ασφάλεια της ομάδας προέχει.</p><a class="card-tail" href="https://www.gazzetta.gr/kolymbisi/2570589/taiganidis-o-kairos-kai-ta-mpofor-stamatisan-egheirima-toy-stin-kypro" target="_blank" rel="noopener noreferrer" data-t="readCoverage">Διάβασε το δημοσίευμα ↗</a></div></article>
+  <article class="card"><div class="card-visual"><strong>BEYOND THE DISTANCE</strong><span class="big-no">∞</span></div><div class="card-copy"><div class="meta" data-t="sea5Tag">Ο σκοπός</div><h3 data-t="sea5Title">Ο αθλητισμός συναντά την κοινωνία</h3><p data-t="sea5Text">Οι μεγάλες διαδρομές αναδεικνύουν την αντοχή, τη συμπερίληψη, την αλληλεγγύη και τη δύναμη της συλλογικής προσπάθειας.</p></div></article>
+  <article class="card"><div class="card-visual"><strong>SEA · CULTURE · GREECE</strong><span class="big-no">GR</span></div><div class="card-copy"><div class="meta" data-t="sea6Tag">Η φιλοσοφία</div><h3 data-t="sea6Title">Θάλασσα, φύση και πολιτισμός</h3><p data-t="sea6Text">Η ανοιχτή θάλασσα συνδέει τις διαδρομές με τα νησιά, την ιστορία και το θαλάσσιο περιβάλλον της Ελλάδας και της Ανατολικής Μεσογείου.</p></div></article>
+</div></div></section>
+<section class="section section-dark" id="projects"><div class="page-wrap"><div class="section-head"><div><span class="section-kicker" data-t="projectKick">ΠΡΟΟΠΤΙΚΗ · ΣΧΕΔΙΑΖΟΜΕΝΑ ΕΓΧΕΙΡΗΜΑΤΑ</span><h2 data-t="projectTitle">Οι επόμενοι ορίζοντες.</h2><p class="section-intro" data-t="projectDesc">Μελλοντικοί αθλητικοί στόχοι υπό σχεδιασμό. Οι διαδρομές, τα χρονοδιαγράμματα και τυχόν διεθνείς πιστοποιήσεις θα οριστικοποιηθούν πριν από την πραγματοποίησή τους.</p></div></div>
+<div class="projects"><article class="project-feature"><span class="pill" style="align-self:flex-start" data-t="planned">ΥΠΟ ΣΧΕΔΙΑΣΜΟ</span><h3 data-t="p1Title">«Κύκλος Ζωής»<br>Γύρος Κυκλάδων</h3><p data-t="p1Desc">Σχεδιαζόμενη κολυμβητική διαδρομή περίπου 380 χλμ., με αφετηρία και τερματισμό τη Σύρο και σύνδεση 11 νησιών των Κυκλάδων. Μια δράση με αθλητικό, περιβαλλοντικό και πολιτιστικό προσανατολισμό.</p></article>
+<article class="project-small"><span class="pill" data-t="longTerm">ΜΑΚΡΟΠΡΟΘΕΣΜΟ ΟΡΑΜΑ</span><h3 data-t="p3Title">Ατλαντικός Ωκεανός</h3><p data-t="p3Desc">Ένα φιλόδοξο όραμα υπερμαραθώνιας κολύμβησης, σε πρώιμο στάδιο σχεδιασμού, που απαιτεί διεξοδική τεχνική και επιχειρησιακή αξιολόγηση.</p></article></div>
+</div></section>
+<section class="section section-dark" id="honours"><div class="page-wrap"><span class="section-kicker" data-t="honoursKick">ΤΙΜΗΤΙΚΕΣ ΒΡΑΒΕΥΣΕΙΣ</span><h2 data-t="honoursTitle">Διακρίσεις πέρα από τον αγωνιστικό χώρο.</h2><div class="info-panel"><p data-t="honoursNote">Εδώ θα παρουσιάζονται επιλεγμένες τιμητικές βραβεύσεις και αναγνωρίσεις, με τεκμηριωμένες πληροφορίες και φωτογραφικό υλικό.</p></div></div></section>
+<section class="section" id="values"><div class="page-wrap"><span class="section-kicker" data-t="valuesKick">ΟΙ ΑΞΙΕΣ</span><h2 data-t="valuesTitle">Περισσότερο από μια απόσταση.</h2><div class="values"><div class="value"><h3 data-t="v1Title">Αθλητική αριστεία</h3><p data-t="v1Text">Προετοιμασία, συνέπεια, πειθαρχία και σεβασμός στους κανόνες κάθε διοργάνωσης.</p></div><div class="value"><h3 data-t="v2Title">Κοινωνική προσφορά</h3><p data-t="v2Text">Ο αθλητισμός ως μέσο συμπερίληψης, έμπνευσης και υποστήριξης της κοινότητας.</p></div><div class="value"><h3 data-t="v3Title">Σεβασμός στη θάλασσα</h3><p data-t="v3Text">Ανάδειξη της φύσης, της θαλάσσιας ζωής και της πολιτιστικής κληρονομιάς των τόπων.</p></div></div></div></section>
+<section class="section" id="partners"><div class="page-wrap"><span class="section-kicker" data-t="partnersKick">ΥΠΟΣΤΗΡΙΞΗ & ΣΥΝΕΡΓΑΣΙΕΣ</span><h2 data-t="partnersTitle">Μαζί, κάθε διαδρομή αποκτά μεγαλύτερη δύναμη.</h2><div class="sponsor-note"><p data-t="partnersText">Η ενότητα θα φιλοξενήσει τους επίσημους χορηγούς και συνεργάτες των αθλητικών δράσεων, με την έγκρισή τους. Η παρουσίαση δεν προεξοφλεί καμία νέα συμφωνία.</p><div class="seal" aria-hidden="true">CT</div></div></div></section>
+<section class="section section-dark" id="gallery"><div class="page-wrap"><span class="section-kicker" data-t="galleryKick">ΦΩΤΟΓΡΑΦΙΕΣ & VIDEO</span><h2 data-t="galleryTitle">Οι εικόνες της διαδρομής.</h2><div class="gallery-teaser"><h3 data-t="galleryH3">Ένα αρχείο από στιγμές που αξίζει να μείνουν.</h3><p data-t="galleryP">Η φωτογραφική ενότητα θα συμπληρωθεί με επιλεγμένο προσωπικό υλικό από τους Παραολυμπιακούς Αγώνες, τις κολυμβητικές δράσεις και τις προετοιμασίες.</p><div class="gallery-steps"><span data-t="gallery1">Παραολυμπιακοί</span><span data-t="gallery2">Open Water</span><span data-t="gallery3">Πίσω από τις δράσεις</span></div></div></div></section>
+<section class="section" id="media"><div class="page-wrap"><div class="section-head"><div><span class="section-kicker" data-t="mediaKick">ΔΗΜΟΣΙΕΥΜΑΤΑ & ΠΗΓΕΣ</span><h2 data-t="mediaTitle">Η διαδρομή στα μέσα ενημέρωσης.</h2><p class="section-intro" data-t="mediaDesc">Ενδεικτική τεκμηρίωση της αθλητικής πορείας και των κολυμβητικών εγχειρημάτων.</p></div></div><div class="media-links">
+<a class="media-link" href="https://www.paralympic.org/athletes/charalampos-taiganidis" target="_blank" rel="noopener noreferrer"><span><small>IPC</small><strong data-t="m1">Επίσημα Παραολυμπιακά αποτελέσματα</strong></span><i>↗</i></a>
+<a class="media-link" href="https://www.gazzetta.gr/specials/2352201/haralampos-taiganidis" target="_blank" rel="noopener noreferrer"><span><small>Gazzetta</small><strong data-t="m2">Η προσωπική και αθλητική πορεία</strong></span><i>↗</i></a>
+<a class="media-link" href="https://www.neakriti.gr/athlitismos/spor/2027044_egrapse-istoria-o-taiganidis-me-mega-horigo-ton-kotsobolo-video" target="_blank" rel="noopener noreferrer"><span><small>Neakriti</small><strong data-t="m3">Η κολυμβητική διαδρομή στην Κρήτη</strong></span><i>↗</i></a>
+<a class="media-link" href="https://www.gazzetta.gr/kolymbisi/2570589/taiganidis-o-kairos-kai-ta-mpofor-stamatisan-egheirima-toy-stin-kypro" target="_blank" rel="noopener noreferrer"><span><small>Gazzetta</small><strong data-t="m4">Η προσπάθεια στην Κύπρο το 2026</strong></span><i>↗</i></a>
+</div></div></section>
+<section class="section contact" id="contact"><div class="page-wrap"><div class="contact-layout"><span class="section-kicker" data-t="contactKick">ΕΠΙΚΟΙΝΩΝΙΑ & ΣΥΝΕΡΓΑΣΙΕΣ</span><h2 data-t="contactTitle">Η επόμενη διαδρομή μπορεί να μας ενώσει.</h2><p data-t="contactP">Για αθλητικές δράσεις, στρατηγικές συνεργασίες, χορηγίες, συνεντεύξεις και επικοινωνία με τα μέσα ενημέρωσης.</p><div style="margin-top:28px"><a class="btn btn-gold" href="mailto:xtaiganidis@gmail.com?subject=CT%20Open%20Water%20-%20Collaboration" data-t="contactBtn">Επικοινωνία μέσω email ↗</a></div><div class="social"><a href="https://www.instagram.com/taiganidis_charalampos/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/@Taiganidischaralampos" target="_blank" rel="noopener noreferrer">TikTok ↗</a><span>Facebook · Charalampos Taiganidis</span></div></div></div></section>
+</main>
+<footer><div class="page-wrap footer-inner"><span>© <span id="year">2026</span> Charalampos Taiganidis · CT OPEN WATER</span><span data-t="footerLine">Η θάλασσα είναι η αρχή της επόμενης διαδρομής.</span><a href="#home" data-t="top">Επιστροφή στην αρχή ↑</a></div></footer>
+<script>
+(function(){
+  'use strict';
+  const langButton=document.getElementById('language');const menuButton=document.getElementById('menu');const nav=document.getElementById('main-nav');
+  const en={
+    shortcutStory:'My story ↗',shortcutMedals:'Sporting achievements ↗',shortcutDocs:'My documentaries ↗',shortcutHonours:'Honours & recognitions ↗',shortcutContact:'Contact ↗',honoursKick:'HONOURS & RECOGNITIONS',honoursTitle:'Recognition beyond competition.',honoursNote:'Selected honours and recognitions will be presented here, with verified details and photographs.',
+    navAbout:'My story',navMedals:'Honours',navOpen:'Open water',navProjects:'Future goals',navMedia:'Press',navContact:'Contact',eyebrow:'OFFICIAL PERSONAL WEBSITE',firstName:'CHARALAMPOS',lastName:'TAIGANIDIS',heroLead:'From the Paralympic podium to the power of the open sea. A journey that continues beyond the limits.',heroCta1:'Athletic career',heroCta2:'Open-water journeys ↗',statMedals:'Paralympic medals',statGold:'Paralympic gold medals',statGames:'Paralympic appearances',statRecords:'World records in swimming',aboutKick:'THE STORY',aboutTitle:'A lifetime dedicated to swimming.',aboutP1:'From my first years in competitive swimming to the highest level of Paralympic sport, water has been the place where I learned to test my limits.',aboutP2:'After five Paralympic appearances and major international achievements, I began a new chapter: ultra-distance open-water swimming, with journeys that connect athletic effort with people, Greece and nature.',aboutQuote:'“Dreams have no limits.”',aboutAside:'The journey at a glance',infoSport:'Sport',infoSportV:'Swimming & Open Water',infoGames:'Paralympic Games',infoTitles:'World achievements',infoTitlesV:'14 world titles',infoSea:'Open water',infoSeaV:'Since 2022',infoIdentity:'Signature identity',medalKick:'SPORTING LEGACY',medalTitle:'Five Paralympic Games. One story.',medalP:'Ten medals: four gold, four silver and two bronze. Years of competing at the highest international level.',g1:'Athens',g2:'Beijing',g3:'London',g4:'Rio',g5:'Tokyo',g1s:'Paralympic Games',g5s:'Tokyo 2020, held in 2021',medalSource:'Official results:',openKick:'COMPLETED SWIMS & ATTEMPTS',openTitle:'The sea as the next challenge.',openDesc:'Beyond the pool, every ultra-distance swim became a unique story of endurance, teamwork and social purpose.',done2022:'2022 · Completed',done2023:'2023 · Completed',done2025:'2025 · Completed',attempt2026:'2026 · Attempt',sea1Title:'Rhodes – Panormitis, Symi',sea1Text:'An open-water swim of approximately 25 nautical miles, finishing at Panormitis Monastery on Symi.',sea2Title:'Souda – Sitia, Crete',sea2Text:'An ultra-distance swim of approximately 250 km along the northern coast of Crete.',sea3Title:'Paphos – off Larnaca',sea3Text:'Approximately 149 km of continuous swimming in Cypriot waters, in an effort lasting around 60 hours.',sea4Title:'Cyprus · 151 km goal',sea4Text:'The attempt was stopped for safety due to strong winds, after approximately 32 hours and 90 km of swimming. The safety of the entire team comes first.',sea5Tag:'Our purpose',sea5Title:'Sport meets society',sea5Text:'Long-distance swims carry messages of endurance, inclusion, solidarity and the power of working together.',sea6Tag:'Our philosophy',sea6Title:'Sea, nature and culture',sea6Text:'Open-water routes connect islands, history and the marine environment of Greece and the Eastern Mediterranean.',readCoverage:'Read the coverage ↗',projectKick:'PERSPECTIVE · PROPOSED PROJECTS',projectTitle:'The horizons ahead.',projectDesc:'Future athletic goals under development. Routes, schedules and any international certification will be finalised before execution.',planned:'IN PLANNING',longTerm:'LONG-TERM VISION',p1Title:'“Circle of Life” — Cyclades',p1Desc:'A proposed swimming route of approximately 380 km, beginning and ending on Syros and linking 11 Cycladic islands. A project combining athletic ambition with environmental and cultural awareness.',p3Title:'The Atlantic Ocean',p3Desc:'An ambitious ultra-distance swimming vision at an early planning stage, requiring thorough technical and operational assessment.',valuesKick:'CORE VALUES',valuesTitle:'More than a distance.',v1Title:'Sporting excellence',v1Text:'Preparation, consistency, discipline and respect for the rules of every event.',v2Title:'Social contribution',v2Text:'Sport as a vehicle for inclusion, inspiration and community support.',v3Title:'Respect for the sea',v3Text:'Celebrating nature, marine life and the heritage of the places we encounter.',partnersKick:'SUPPORT & PARTNERSHIPS',partnersTitle:'Together, every journey carries greater impact.',partnersText:'Official sponsors and partners of sporting initiatives will be featured here with their permission. This section does not imply any new agreement.',galleryKick:'PHOTOS & VIDEO',galleryTitle:'The journey in pictures.',galleryH3:'Moments worth keeping.',galleryP:'This section will feature selected personal photographs from the Paralympic Games, open-water journeys and preparations.',gallery1:'Paralympic Games',gallery2:'Open water',gallery3:'Behind the scenes',mediaKick:'MEDIA & SOURCES',mediaTitle:'The journey in the press.',mediaDesc:'Selected sources documenting athletic achievements and swimming projects.',m1:'Official Paralympic results',m2:'Personal and sporting journey',m3:'The Crete open-water expedition',m4:'The 2026 Cyprus attempt',contactKick:'CONTACT & PARTNERSHIPS',contactTitle:'The next journey may bring us together.',contactP:'For sporting events, strategic partnerships, sponsorships, interviews and media enquiries.',contactBtn:'Get in touch by email ↗',footerLine:'The sea is the beginning of the next journey.',top:'Back to top ↑'
+  };
+  const greek={}; document.querySelectorAll('[data-t]').forEach(el=>{const key=el.getAttribute('data-t');if(!(key in greek))greek[key]=el.textContent;});
+  let current='el';
+  function setLang(next){current=next;document.documentElement.lang=next;document.querySelectorAll('[data-t]').forEach(el=>{const key=el.getAttribute('data-t');const value=next==='en'?en[key]:greek[key];if(value!==undefined)el.textContent=value;});langButton.textContent=next==='el'?'EN':'EL';document.title=next==='el'?'Χαράλαμπος Ταϊγανίδης | CT Open Water':'Charalampos Taiganidis | CT Open Water';}
+  langButton.addEventListener('click',()=>setLang(current==='el'?'en':'el'));
+  menuButton.addEventListener('click',()=>{const opened=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(opened));});
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));
+  document.getElementById('year').textContent=String(new Date().getFullYear());
+})();
+</script>
+<!-- SITE NOTES: Main hero image is stored locally as main-photo.jpg in the same GitHub repository folder. The artwork is unchanged and its five on-image cards are linked to real sections. This is a publication draft. The existing official CT logo and licensed personal photography can be integrated after receiving files. The planned routes are explicitly described as proposals, not approved or certified records. No new sponsorship relationships are represented. Some published distances/durations are approximate and media-reported. -->
 </body>
 </html>
